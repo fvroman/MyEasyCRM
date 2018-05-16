@@ -24,7 +24,8 @@ public class ConnectionTester {
         Connection connection = null;
 
         try {
-            Locale.setDefault(Locale.ENGLISH);
+            System.out.println(Locale.getDefault());
+            //Locale.setDefault(Locale.ENGLISH);
 
             connection = DriverManager.getConnection(
                     "jdbc:oracle:thin:@localhost:1521:xe", "lolkis", "12345123");

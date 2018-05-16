@@ -30,7 +30,7 @@
     <!-- Step 1: Define Database DataSource / connection pool -->
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
           destroy-method="close">
-        <property name="driverClass" value="com.oracle.jdbc.OracleDriver" />
+        <property name="driverClass" value="oracle.jdbc.driver.OracleDriver" />
         <property name="jdbcUrl" value="jdbc:oracle:thin:@localhost:1521:xe" />
         <property name="user" value="lolkis" />
         <property name="password" value="12345123" />
